@@ -2,9 +2,17 @@ spring:
   config:
     activate:
       on-profile:
-        - dev
+        - test
   data:
     mongodb:
       host: localhost
       port: 27017
       database: moviesTestDb
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG

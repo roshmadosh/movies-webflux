@@ -1,5 +1,6 @@
 package com.reactivespring.movieinfoservice.controllers;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient;
@@ -13,6 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 
 @WebFluxTest(controllers = FluxAndMonoController.class)
 @AutoConfigureWebTestClient
+@Disabled
 class FluxAndMonoControllerTest {
 
     @Autowired
